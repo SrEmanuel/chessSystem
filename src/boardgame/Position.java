@@ -30,6 +30,6 @@ public class Position {
     @Override
     public String toString(){
         return row + ", " + column;
-    }
+    } //That prints the position when called
 
 }
