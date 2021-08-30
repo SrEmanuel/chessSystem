@@ -22,5 +22,5 @@ public abstract class ChessPiece extends Piece {
         return p != null && p.getColor() != color;
     }
 
-    //TODO implement
+    //TODO implement generalization of if(getBoard().positionExists(p) && isThereOpponentPiece(p)) at Rook
 }
