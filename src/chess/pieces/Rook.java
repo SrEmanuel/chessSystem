@@ -17,7 +17,7 @@ public class Rook extends ChessPiece {
     }
 
     private void checkLastPositionMark(boolean[][] mat, Position p){
-        /* above - if the upper condition was false, it'll go out of the while and test if that last position exists and if there is an opponent piece
+        /* if the upper condition was false, it'll go out of the while and test if that last position exists and if there is an opponent piece
         if that condition is true it'll mark the position free to go as well */
         if(getBoard().positionExists(p) && isThereOpponentPiece(p)){
             mat[p.getRow()][p.getColumn()] = true;
@@ -65,8 +65,6 @@ public class Rook extends ChessPiece {
             p.setRow(p.getRow() + 1);
         }
 
-        /* above - if the upper condition was false, it'll go out of the while and test if that last position exists and if there is an opponent piece
-        if that condition is true it'll mark the position free to go as well */
         checkLastPositionMark(mat, p);
 
 
