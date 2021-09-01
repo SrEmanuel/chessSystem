@@ -167,6 +167,13 @@ public class ChessMatch {
     }
 
     private boolean testCheckMate(Color color){
+        /*the logic of this test is to see if we are in a checkmate
+        1. it gets all the pieces on the board, filtering the ones which have the king in check.
+        2. It tests all possible moves in all pieces got and verify if some move can remove the king from check
+            2.2 it does that by making a test move of that piece for the possible position and check if its king keep in check
+        3. if that movement removes its king from check, so the method returns false for checkmate
+        but if there's no move that can remove the king from check, it will return true for checkmate and trigger the end of the game
+        */
         if (!testCheck(color)){
             return false;
         }
