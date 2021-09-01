@@ -2,7 +2,7 @@ package boardgame;
 
 public abstract class Piece {
 
-    protected Position position;
+    protected Position position; //This position is only for internal logic. It is a matrix position.
     private Board board;
 
     public Piece(Board board) {

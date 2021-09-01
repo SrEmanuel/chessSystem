@@ -2,6 +2,7 @@ package boardgame;
 
 public class Position {
 
+    //Matrix positions for internal logic
     private int row;
     private int column;
 

@@ -13,6 +13,11 @@ public abstract class ChessPiece extends Piece {
         this.color = color;
     }
 
+    public ChessPosition getChessPosition (){
+        return ChessPosition.fromPosition(position); //That converts a simple matrix position (that is only for internal logic)
+                                                    // into readble normal Chess Positions
+    }
+
     public Color getColor() {
         return color;
     }

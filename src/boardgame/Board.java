@@ -1,6 +1,7 @@
 package boardgame;
 
 public class Board {
+    //Those attributes (rows and columns) define how bigger our board will be and how many spaces it ll have in the matrix.
     private int rows;
     private int columns;
     private Piece[][] pieces;
